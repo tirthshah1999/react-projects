@@ -9,6 +9,7 @@ function App() {
   const [followers, setFollowers] = useState([]);
   
   useEffect(() => {
+    // in starting loading is true then data will be empty []
     if(loading) return;
     setFollowers(data[page]);
   }, [loading, page]);
